@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  <!-- cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- download -->
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+   <!-- box icons -->
+   <link rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+   <!-- REMIX ICONS -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+  rel="stylesheet"/>
+  <!-- font awesome cdn link  -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+ <!-- link aos(animation on screen)  css-->
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />  
+  <style>
+    body {
+        background-image: url(m6.webp);
+        
+        
+        background-size: cover;
+
+    
+      /* background-color: #fff; */
+      color: #000;
+    }
+
+   .heading{
+      color: orangered;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color:whitesmoke;
+      transition: color 0.3s ease-in-out;
+    }
+
+    ul li a:hover {
+      color: #555;
+    }
+    /* ------navbar------- */
+
+/* ============BUTTON============== */
+button {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  color: #ff5722;
+  border: 3px solid #ff5722;
+
+  cursor: pointer;
+  background: none;
+  transition: 0.5s;
+  font-weight: bold;
+ 
+}
+button a{
+  color: #ff5722;
+}
+button a:hover {
+ 
+  color: #111;
+}
+button:hover{
+  background: #ff5722;
+  color: #111;
+}
+h2{
+  font-weight: bold;
+   color: white;
+}
+ /* ------navbar------- */
+ nav{
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 70px;
+  background: #070707;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+nav .navbar{                
+  height: 100%;
+  max-width: 1250px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+ 
+  padding: 0 50px;
+}
+ #ima img{
+  
+  height: 50px;
+  width: 100;
+  
+
+}
+nav .navbar .nav-links{
+  line-height: 70px;
+  height: 100%;
+
+
+}
+nav .navbar .links{
+  display: flex;
+}
+nav .navbar .links li{
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 14px;
+}
+nav .navbar .links li a{
+  height: 100%;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+nav .navbar .links li a:hover{
+  color: #ff5722;
+}
+.links li:hover .htmlcss-arrow,
+.links li:hover .js-arrow{
+  transform: rotate(180deg);
+  }
+
+nav .navbar .links li .arrow{
+ 
+  height: 100%;
+  width: 22px;
+  line-height: 70px;
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+nav .navbar .links li .sub-menu{
+  position: absolute;
+  top: 70px;
+  left: 0;
+  line-height: 40px;
+  background: #070707;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+  display: none;
+  z-index: 2;
+}
+nav .navbar .links li:hover .htmlCss-sub-menu,
+nav .navbar .links li:hover .js-sub-menu{
+  display: block;
+}
+.navbar .links li .sub-menu li{
+  padding: 0 22px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.navbar .links li .sub-menu a{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.navbar .links li .sub-menu .more-arrow{
+  line-height: 40px;
+}
+
+.navbar .links li .sub-menu .more-sub-menu{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  border-radius: 0 4px 4px 4px;
+  z-index: 1;
+  display: none;
+}
+.links li .sub-menu .more:hover .more-sub-menu{
+  display: block;
+}
+
+.navbar .nav-links .sidebar-logo{
+  display: none;
+}
+.navbar .bx-menu{
+  display: none;
+}
+@media (max-width:920px) {
+  nav .navbar{
+    max-width: 100%;
+    padding: 0 25px;
+  }
+
+  nav .navbar .logo a{
+    font-size: 27px;
+  }
+  nav .navbar .links li{
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+  nav .navbar .links li a{
+    font-size: 15px;
+  }
+}
+@media (max-width:800px){
+  .navbar .bx-menu{
+    display: block;
+  }
+  nav .navbar .nav-links{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    display: block;
+    max-width: 270px;
+    width: 100%;
+    background:  #070707;
+    line-height: 40px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+  .navbar .nav-links .sidebar-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sidebar-logo .logo-name{
+    font-size: 25px;
+    color: #fff;
+  }
+    .sidebar-logo  i,
+    .navbar .bx-menu{
+      font-size: 25px;
+      color: #fff;
+    }
+  nav .navbar .links{
+    display: block;
+    margin-top: 20px;
+  }
+  nav .navbar .links li .arrow{
+    line-height: 40px;
+  }
+nav .navbar .links li{
+    display: block;
+  }
+nav .navbar .links li .sub-menu{
+  position: relative;
+  top: 0;
+  box-shadow: none;
+  display: none;
+}
+nav .navbar .links li .sub-menu li{
+  border-bottom: none;
+
+}
+.navbar .links li .sub-menu .more-sub-menu{
+  display: none;
+  position: relative;
+  left: 0;
+}
+.navbar .links li .sub-menu .more-sub-menu li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.links li:hover .htmlcss-arrow,
+.links li:hover .js-arrow{
+  transform: rotate(0deg);
+  }
+  .navbar .links li .sub-menu .more-sub-menu{
+    display: none;
+  }
+  .navbar .links li .sub-menu .more span{
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+
+  .links li .sub-menu .more:hover .more-sub-menu{
+    display: none;
+  }
+  nav .navbar .links li:hover .htmlCss-sub-menu,
+  nav .navbar .links li:hover .js-sub-menu{
+    display: none;
+  }
+.navbar .nav-links.show1 .links .htmlCss-sub-menu,
+  .navbar .nav-links.show3 .links .js-sub-menu,
+  .navbar .nav-links.show2 .links .more .more-sub-menu{
+      display: block;
+    }
+    .navbar .nav-links.show1 .links .htmlcss-arrow,
+    .navbar .nav-links.show3 .links .js-arrow{
+        transform: rotate(180deg);
+}
+    .navbar .nav-links.show2 .links .more-arrow{
+      transform: rotate(90deg);
+    }
+}
+@media (max-width:370px){
+  nav .navbar .nav-links{
+  max-width: 100%;
+} 
+}
+
+
+#footer a{
+
+  margin: 5px;
+  color: white;
+  position: absolute;
+
+}
+#footer h3{
+color: white;
+}
+#footer a{
+  margin: 5px;
+  color: white;
+
+}
+#footer a i{
+  color: #ff5722;
+  border: none;
+}
+#footer  i{
+  color: #ff5722;
+ 
+  border: 2px solid #ff5722;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+ 
+  transition: 0.5s;
+  font-weight: bold;
+}
+ #footer i:hover {
+  background: #ff5722;
+  color: black;
+}
+#footer p{
+  font-size: 20px ;
+  color: white;
+
+
+/* Responsive adjustments for smaller screens */
+
+}
+/* form */
+.modal-body{
+  background-color: rgba(0, 0, 0, 0.7);
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+
+}
+#contact{
+  padding:25px;
+	margin:50px 0;
+  
+}
+#contact h3 {
+	color: #ff5722;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+  color: white;
+}
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"],  #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover,  #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+#select{
+  width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+
+  </style>
+
+</head>
+<body>
+  <!-- nav bar -->
+  <div class="container-fluid">
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo" id="ima"><a href="#" data-aos="zoom-in-left" data-aos-delay="150">
+            <img src="1-removebg-preview.png" alt="" ></a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name">Logo</span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li><a href="index.html" data-aos="zoom-in-left" data-aos-delay="300">HOME</a></li>
+              <li>
+                <a href="#" data-aos="zoom-in-left" data-aos-delay="450">BRAND</a>
+                <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                <ul class="htmlCss-sub-menu sub-menu">
+                  <li><a href="audi.html" >AUDI</a></li>
+                  <li><a href="bmw.html" >BMW</a></li>
+                  <li><a href="MERCEDEZ.HTML" >MERCEDEZ</a></li>
+                  <li><a href="toyota.html" >TOYOTA</a></li>
+                  <li class="more">
+                    <span><a href="#">More</a>
+                      <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                    </span>
+                    <ul class="more-sub-menu sub-menu">
+                      <li><a href="kia.html" >KIA MOTORS </a></li>
+                  <li><a href="suzuki.html" >SUZUKI</a></li>
+                  <li><a href="hyundai.html" >HYNDAI</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="index.html#popular" data-aos="zoom-in-left" data-aos-delay="600">GALLERY</a></li>
+             
+              <li><a href="ab"  data-aos="zoom-in-left" data-aos-delay="750">ABOUT US</a></li>
+              <li>
+                <a href="contact us .html"   data-aos="zoom-in-left" data-aos-delay="900">CONTACT US</a>
+                <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                <ul class="js-sub-menu sub-menu">
+                  <li><a href="finance.html" >Finance</a></li>
+                  <li><a href="discount.html" >AVAIL DISOUNTS </a></li>
+                </ul>
+              </li>
+              <li><a href="sitemap.html"   data-aos="zoom-in-left" data-aos-delay="1150">SITE MAP</a></li>
+            </ul>
+          </div>
+          <!-- <button style=" border-radius: 50px; font-size: 15px; font-weight: bold;  margin: 10px; text-align: center;  margin-top: 0px;"  data-aos="zoom-in-left"
+          data-aos-delay="1300"> Book now </button>
+           -->
+                  <button type="button" style=" border-radius: 50px; font-size: 15px; font-weight: bold;  margin: 10px; text-align: center;  margin-top: 0px; "  data-aos="zoom-in-left"
+                  data-aos-delay="1300" data-bs-toggle="modal" data-bs-target="#registrationmodal">Book now</button>
+                  <!-- modal -->
+                  <!-- <p id="counter">00</p>
+    <script> var n=localStorage.getItem("count");
+        if(n===null)
+        {
+            n=0;
+        }
+        n++;
+        localStorage.setItem("count",n);
+        document.getElementById("counter").innerHTML=n;
+        </script> -->
+          <!-- <div class="search-box">
+            <i class='bx bx-search'></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search...">
+            </div>
+        </div> -->
+      <!-- </div> -->
+      </nav>
+    </div>
+      <!-- end of nav -->
+  <div class="container " style="margin-top: 100px;">
+    <h1 class="text-center mb-4" style="color: black;">SITE MAP</h1>
+    
+    <div class="row">
+      <div class="col-md-4">
+        <h2 class="heading">Home</h2>
+        <ul>
+          <strong> <li><a href="index.html" >Welcome</a></li></strong>
+          <strong><li><a href="aboutus.html">About Us</a></li></strong>
+          <strong><li><a href="contact us .html">Contact Us</a></li></strong>
+        </ul>
+      </div>
+      
+      <div class="col-md-4">
+        <h2 class="heading">Models</h2>
+        <ul>
+          <strong><li><a href="hyundai.html" >HYUNDAI</a></li></strong>
+          <strong> <li><a href="suzuki.html">Suzuki</a></li></strong>
+          <strong><li><a href="toyota.html" >TOYOTA</a></li></strong>
+          <strong> <li><a href="bmw.html">BMW</a></li></strong>
+          <strong> <li><a href="MERCEDEZ.HTML" >MERCEDEZ BENZ</a></li></strong>
+          <strong><li><a href="kia.html" >KIA MOTORS</a></li></strong>
+        </ul>
+      </div>
+      
+      <div class="col-md-4">
+        <h2 class="heading">CONTACT US</h2>
+        <ul>
+          <strong><li><a href="aboutus.html"  >ABOUT US</a></li></strong>
+          <strong><li><a href="contact us .html">LOCATE US</a></li></strong>
+          
+        </ul><strong>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+     
+
+      <div class="col-md-6">
+        <h2 class="heading">LOAN CARS</h2>
+        <ul>
+          <strong><li><a href="finance.html" >Finance page</a></li></strong>
+         
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <h2 class="heading">QUICK MAP</h2>
+        <ul>
+         <strong> <li><a href="sitemap.html">FAST CLICK</a></li></strong>
+        
+        </ul>
+      </div>
+    </div>
+  </div>
+ <!-- footer -->
+ <div class="container-fluid" id="footer" style="background-color: black;">
+  <div class="row" style="margin-top: 20px;">
+    <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="150"> <span style="color: #ff5722;" > Car Addict</span>
+      <h3 >Goes for The <span style="color: #ff5722;">best</span> </h3> <br>
+      <p>"Drive with passion, arrive in style." <br>
+        "Turning miles into memories, one journey at a time."</p>
+     
+<i class='bx bxl-facebook' style="margin: 5px;"></i>
+<i class='bx bxl-instagram' style="margin: 5px;"></i>
+<i class='bx bxl-linkedin' style="margin: 5px;"></i>
+<i class='bx bxl-twitter' style="margin: 5px;"></i>
+  </div>
+    <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="300">
+      <h3>Quick links</h3>
+      <a href="index.html"  class="links">
+        <i class='bx bx-right-arrow-alt'></i> Home</a> <br>
+      <a href="abt.html"  class="links">
+        <i class='bx bx-right-arrow-alt'></i> About </a> <br>
+      <a href="sitemap.html"  class="links">
+        <i class='bx bx-right-arrow-alt'></i> Site map </a> <br>
+      <a href="discount.html"  class="links">
+        <i class='bx bx-right-arrow-alt'></i> Services </a> <br>
+      <a href="index.html#popular"  class="links">
+        <i class='bx bx-right-arrow-alt'></i> Gallery   </a> <br>
+      <a href="finance.html" class="links">
+        <i class='bx bx-right-arrow-alt'></i> Finance </a>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="450">   <h3>Contact info</h3>
+      <span  style="color: white;"><i class='bx bx-map' style="margin: 5px;"></i> Ohio, USA</span> <br>
+      <span style="color: white;" ><i class='bx bx-phone-call' style="margin: 5px;"></i> +123-456-7890</span> <br>
+      <span  style="color: white;"><i class='bx bxs-envelope'  style="margin: 5px;"></i> demo@gmail.com</span> <br>
+      <span  style="color: white;"><i class='bx bxs-alarm' style="margin: 5px;"></i> 9:00am - 5:00pm</span>
+      
+    </div>
+  </div>
+</div>
+<!-- end of footer -->
+
+     <!-- modal windo -->
+  <div class="modal fade" id="registrationmodal" tabindex="-1" aria-labelledby="registrationmodallabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title" id="registrationmodallabel">Quick Contact</h5> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" >
+          <form id="contact">
+            <h3>Quick Contact</h3>
+  <h4 >Contact us today, and get reply with in 24 hours!</h4>
+  <fieldset >
+    <input placeholder="Your name" type="text" tabindex="1" required autofocus >
+  </fieldset>
+  <fieldset >
+    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+  </fieldset>
+  <fieldset  >
+    <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+  </fieldset>
+  <fieldset >
+   
+    <select name="select" id="select"  >
+      <option value="">------select brand-------</option>
+    <option value="">Toyota</option>
+    <option value="">Huandai</option>
+    <option value="">Suzuki</option>
+    <option value="">kia Motors</option>
+    <option value="">Audi</option>
+    <option value="">Bmw</option>
+  </select> 
+  </fieldset>
+  <fieldset >
+    
+    <select name="select" id="select"  >
+      <option value="">------select models-------</option>
+    <option value="">Toyota</option>
+    <option value="">Huandai</option>
+    <option value="">Suzuki</option>
+    <option value="">kia Motors</option>
+    <option value="">Audi</option>
+    <option value="">Bmw</option>
+  </select> 
+  </fieldset>
+  <fieldset >
+  
+    <select name="select" id="select"  >
+      <option value="">------select color-------</option>
+    <option value="">black</option>
+    <option value="">white</option>
+    <option value="">silver</option>
+    <option value="">blue</option>
+    <option value="">red</option>
+    <option value="">green</option>
+  </select> 
+  </fieldset>
+  <fieldset>
+    <textarea placeholder="Type your Message Here...." tabindex="7" required></textarea>
+  </fieldset>
+  <fieldset>
+    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" style=" border-radius: 50px; font-size: 15px; font-weight: bold;  margin: 10px; text-align: center;  margin-top: 0px; ">Submit</button>
+  </fieldset>
+                        </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- link aos (animation on screen ) js -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+    AOS.init({
+      duration: 800,
+      offset: 150,
+    });
+  </script>
+      <!-- js cdn -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script>
+        // sidebar open close js code
+let navLinks = document.querySelector(".nav-links");
+let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuCloseBtn = document.querySelector(".nav-links .bx-x");
+menuOpenBtn.onclick = function() {
+navLinks.style.left = "0";
+}
+menuCloseBtn.onclick = function() {
+navLinks.style.left = "-100%";
+}
+
+
+// sidebar submenu open close js code
+let htmlcssArrow = document.querySelector(".htmlcss-arrow");
+htmlcssArrow.onclick = function() {
+ navLinks.classList.toggle("show1");
+}
+let moreArrow = document.querySelector(".more-arrow");
+moreArrow.onclick = function() {
+ navLinks.classList.toggle("show2");
+}
+let jsArrow = document.querySelector(".js-arrow");
+jsArrow.onclick = function() {
+ navLinks.classList.toggle("show3");
+}
+      </script>
+</body>
+</html>

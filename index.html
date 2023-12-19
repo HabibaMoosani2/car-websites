@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <!-- box icons -->
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!-- REMIX ICONS -->
+ <link
+ href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+ rel="stylesheet"/>
+ <!-- font awesome cdn link  -->
+ <link
+ rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+<!-- link aos(animation on screen)  css-->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+ <!-- download link -->
+ <link rel="stylesheet" href="index.css">
+ <link rel="stylesheet" href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+ <!-- online link -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+
+</head>
+
+
+<body style="background-color: black;">
+  <!-- <div class="container-fluid" style="background-color: rgb(199, 198, 198); height: 70px;" id="location">
+    <div class="row"><h1 style="color: rgb(123, 87, 241); font-size: 15px; margin-top: 5px;">Geolocation and Date</h1><p id="location" ></p>
+      <p id="date"></p></div>
+  </div> -->
+      <!-- nav bar -->
+      <div class="container-fluid">
+        <nav>
+            <div class="navbar">
+              <i class='bx bx-menu'></i>
+              <div class="logo" id="ima"><a href="#" data-aos="zoom-in-left" data-aos-delay="150">
+                <img src="1-removebg-preview.png" alt="" ></a></div>
+              <div class="nav-links">
+                <div class="sidebar-logo">
+                  <span class="logo-name">Logo</span>
+                  <i class='bx bx-x' ></i>
+                </div>
+                <ul class="links">
+                  <li><a href="index.html" data-aos="zoom-in-left" data-aos-delay="300">HOME</a></li>
+                  <li>
+                    <a href="#" data-aos="zoom-in-left" data-aos-delay="450">BRAND</a>
+                    <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                    <ul class="htmlCss-sub-menu sub-menu">
+                      <li><a href="audi.html" >AUDI</a></li>
+                      <li><a href="bmw.html" >BMW</a></li>
+                      <li><a href="MERCEDEZ.HTML" >MERCEDEZ</a></li>
+                      <li><a href="toyota.html" >TOYOTA</a></li>
+                      <li class="more">
+                        <span><a href="#">More</a>
+                          <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                        </span>
+                        <ul class="more-sub-menu sub-menu">
+                          <li><a href="kia.html" >KIA MOTORS </a></li>
+                      <li><a href="suzuki.html" >SUZUKI</a></li>
+                      <li><a href="hyundai.html" >HYNDAI</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="index.html#popular" data-aos="zoom-in-left" data-aos-delay="600">GALLERY</a></li>
+                 
+                  <li><a href="ab"  data-aos="zoom-in-left" data-aos-delay="750">ABOUT US</a></li>
+                  <li>
+                    <a href="contact us .html"   data-aos="zoom-in-left" data-aos-delay="900">CONTACT US</a>
+                    <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                    <ul class="js-sub-menu sub-menu">
+                      <li><a href="finance.html" >Finance</a></li>
+                      <li><a href="discount.html" >AVAIL DISOUNTS </a></li>
+                    </ul>
+                  </li>
+                  <li><a href="sitemap.html"   data-aos="zoom-in-left" data-aos-delay="1150">SITE MAP</a></li>
+                </ul>
+              </div>
+          <!-- <button style=" border-radius: 50px; font-size: 15px; font-weight: bold;  margin: 10px; text-align: center;  margin-top: 0px;"  data-aos="zoom-in-left"
+          data-aos-delay="1300"> Book now </button>
+           -->
+                  <button type="button" style=" border-radius: 50px; font-size: 15px; font-weight: bold;  margin: 10px; text-align: center;  margin-top: 0px; "  data-aos="zoom-in-left"
+                  data-aos-delay="1300" data-bs-toggle="modal" data-bs-target="#registrationmodal">Book now</button>
+                  <!-- modal -->
+                  <p id="counter">00</p>
+    <script> var n=localStorage.getItem("count");
+        if(n===null)
+        {
+            n=0;
+        }
+        n++;
+        localStorage.setItem("count",n);
+        document.getElementById("counter").innerHTML=n;
+        </script>
+          <!-- <div class="search-box">
+            <i class='bx bx-search'></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search...">
+            </div>
+        </div> -->
+      <!-- </div> -->
+      </nav>
+    </div>
+      <!-- end of nav -->
+      
+    
+       <!-- slider -->
+       <div class="container-fluid" >
+        <div class="row ">
+     <section class="col-lg-12 col-md-12 col-sm-12" >
+      <video id="slider1" autoplay muted loop height="150vh">
+        <source src="./Downloads/slide 1.mp4" type="video/mp4">
+      </video>
+      <ul class="navigation" >
+  
+    <li onclick="videoUrl('./Downloads/slide 1.mp4')" ><img src="c2-removebg-preview.png" alt="" ></li>
+        <li onclick="videoUrl('./Downloads/slide 4.mp4')" ><img src="bu.jpg" alt="" ></li>
+        <li onclick="videoUrl('./Downloads/slide3.mp4')" ><img src="bu1.jpg" alt="" ></li>
+      </ul>
+     </section>
+    </div>
+    </div>
+    <!-- end of slider -->
+    <!-- about -->
+    <div class="container-fluid">
+      <div class="row">
+    <div class="card mb-3" style="max-width: 100%;  background: black; margin-top: 20px;margin-top: 625px; " >
+      <div class="row g-0">
+        <div class="col-md-6" style="clip-path: polygon(5% 10%, 66% 19%, 78% 93%, 7% 89%);"data-aos="fade-right" data-aos-delay="300">
+          <img src="./offer/maintenaince.jpg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-6" style="text-align: start; margin-top: 70px;" data-aos="fade-left" data-aos-delay="600">
+          <div class="card-body">
+            <h2 class="card-title" style="font-weight: bold; color: white;">
+              Machines with <br />
+              Future Technology
+            </h2>
+            <p class="card-text " style="color: white;">
+              See the future with high-perfomace electric cars produced by <br>
+              renownes brands. They feature futuristic builds and designs with <br>
+              new and innovative platforms that last a long time.
+            </p>
+            
+            <a href="abt.html"><button style=" border-radius: 50px;
+            margin: 10px;">Know more</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- end of about -->
+  
+    <!-- popular vehicle -->
+   
+    <section class="popular" id="popular"  style="background: black;" data-aos="fade-up"
+    data-aos-delay="150">
+      <div class="heading" style="text-align: center;">
+        <span style="color: #ff5722; font-size: 1.5rem; ">Top Rated</span>
+        <h2 style="font-weight: bold; color: white; text-align: center;">Most popular Vehicles</h2>
+           </div>
+           
+      <div class="box-container" >
+        
+          <div class="box">
+              <span class="price"> $500k - $2000k </span>
+              <img src="./logo/toyoc.jpg" alt="" />
+              <h3>Toyota</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+             <button style=" border-radius: 50px;
+             margin: 10px;"><a href="toyota.html" target="_blank">see more</a></button>
+          </div>
+       <div class="box">
+          <span class="price"> $500k - $2000k </span>
+              <img src="./logo/bmwc.jpg" alt="" />
+              <h3>Bmw</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <button style=" border-radius: 50px;
+             margin: 10px;"><a href="bmw.html" target="_blank">see more</a></button>
+      </div>
+      <div class="box">
+         
+        
+           <span class="price"> $500k - $2000k </span>
+              <img src="./logo/audic.jpg" alt="" />
+              <h3>Audi</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <button style=" border-radius: 50px;
+              margin: 10px;"><a href="audi.html" target="_blank">see more</a></button>
+      </div>
+  
+    <div class="box">
+    
+      
+      <span class="price"> $500k - $2000k </span>
+              <img src="./logo/suzuc.jpg" alt="" />
+              <h3>Suzuki</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <button style=" border-radius: 50px;
+             margin: 10px;"><a href="suzuki.html" target="_blank">see more</a></button>
+    </div>
+    <div class="box">
+     
+      <span class="price"> $500k - $2000k </span>
+              <img src="./logo/kiac.jpg" alt="" />
+              <h3>Kia motors</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <button style=" border-radius: 50px;
+              margin: 10px;"><a href="kia.html" target="_blank">see more</a></button>
+    </div>
+   
+    <div class="box">
+             
+              <span class="price"> $500k - $2000k </span>
+              <img src="./logo/hundac.jpg" alt="" />
+              <h3>Hynduai</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <button style=" border-radius: 50px;
+             margin: 10px;"><a href="hundai.html" target="_blank">see more</a></button>
+          </div>
+        
+       
+    </div>
+    </section>
+    <!-- end of popular vehicle -->
+     <!-- offer -->
+     
+     <section class="container-fluid" style="background: url(./offer/offer-bg.png); margin-top: 20px;">
+      <div class="row d-flex"  >
+       
+
+        <div class=".col-6 " style="text-align: center;">
+          <h2   style="color: white; margin-top: 40px;">
+           <span style="color: #ff5722;">Do You</span>  Want To Receive <br />
+            Special <span style="color: #ff5722;">Offers</span>?
+          </h2>
+
+          <p  style="color: white; margin: 20px;">
+            Be the first to receive all the information <br>about our products and
+            new cars by email by <br>subscribing to our mailing list.
+          </p>
+
+           <a href="discount.html"><button style=" border-radius: 50px;
+           margin: 10px;">GO</button></a>
+        </div>
+<div class="col-6" style="margin: 40px;">
+
+  
+        <img
+          src="./offer/offer-img.png" alt="" height="450px" id="offer-img" />
+</div>
+</div>
+    </section>
+    <!-- ennd of offer section -->
+      <!-- like a professional  -->
+     
+  <div class="container-fluid" 
+  style="background: black; margin-top: 20px;">
+    <div class="row">
+      <h5 style="text-align: center;   color:#ff5722; margin-top: 20px;"> Why Choose Us ?</h5>
+      <h2 style="text-align: center;  font-weight: bold; color:white;">Like a Professional</h2></div>
+  </div>
+  <div class="container-fluid" style="background: black; top: 0px; bottom: 20px;">
+    <div class="card-group" style="gap: 2rem;" >
+      <div class="card"  data-aos="fade-up" data-aos-delay="150">
+        <img src="./logo/des4.jpeg" class="card-img-top" alt="...">
+       
+          <div class="card-body" style="background-color: #171414; color: white;">
+              
+            <h3 class="card-title">BELTS AND ENGINE</h3>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum, dolor sit amet consectetur  suscipit quam ut debitis neque quas, minima ex, animi in reprehenderit nisi a. Animi?</p>
+            <a href="#" style="color: #ff5722;font-size: 1rem;">read more <i class="fas fa-angle-right"></i></a>
+          </div>
+          </div>
+      <div class="card" data-aos="fade-up" data-aos-delay="450" >
+        <img src="./logo/Screenshot (4).png" class="card-img-top" alt="...">
+        <div class="card-body" style="background-color: #171414; color: white;">
+              
+          <h3 class="card-title">BELTS AND ENGINE</h3>
+          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum, dolor sit amet consectetur  suscipit quam ut debitis neque quas, minima ex, animi in reprehenderit nisi a. Animi?</p>
+          <a href="#" style="color: #ff5722;font-size: 1rem;">read more <i class="fas fa-angle-right"></i></a>
+        </div>
+      </div>
+      <div class="card"  data-aos="fade-up" data-aos-delay="1300">
+        <img src="./logo/des3.jpeg" class="card-img-top" alt="...">
+        <div class="card-body" style="background-color: #171414; color: white;">
+              
+          <h3 class="card-title">BELTS AND ENGINE</h3>
+          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing. Lorem ipsum, dolor sit amet consectetur  suscipit quam ut debitis neque quas, minima ex, animi in reprehenderit nisi a. Animi?</p>
+          <a href="#" style="color: #ff5722;font-size: 1rem;">read more <i class="fas fa-angle-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- like a professional ends -->
+    <!-- news letter start -->
+    <!-- <div class="banner" style="margin:20px ;" >
+      <div class="content " data-aos="zoom-in-up" data-aos-delay="300">
+        <span>NEWSLETTER</span>
+        <h3>SUBSCRIBE for latest news</h3>
+        <form action="">
+          <input type="email" placeholder="enter your email..." required>
+      </form>
+        <button type="submit"  class="email-btn" style=" border-radius: 50px;
+        margin: 10px;">subscribe</button>
+      </div>
+    </div> -->
+    <!-- news letter end -->
+    <!-- customer's -->
+<section class="customers" id="customers" style=" background: black; "> 
+  <div class="heading">
+      <h4 style="text-align: center;   color:#ff5722;">Our Customer's</h4>
+      <h2 style="text-align: center;  font-weight: bold; color:white;">Reviews</h2>
+  </div>
+<div class="customers-container">
+  <div class="box" style="color: white;">
+      <img src="pic-2.png" alt="">
+      <h2>SAIRA</h2>
+      <p>"I recently purchased a  Toyota from Cario Motors S, and I must say it has exceeded my expectations in many aspects. The performance on the road is outstanding, providing a smooth and powerful driving experience. The interior is well-designed with comfortable seating and a user-friendly infotainment system. What truly sets Cario Motors apart is its commitment to safety</p>
+      <div class="stars">
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star-half'></i>
+      </div>
+  </div>
+      <div class="box" style="color: white;">
+          <img src="pic-1.png" alt="">
+          <h2>SALMAN</h2>
+          <p>"I recently became the proud owner of a Cario Motors XE300, and I must say it has been a remarkable driving experience. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus fugiat enim nam magnam! Aperiam, commodi. Doloremque voluptates obcaecati fugiat Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, Lorem ipsum dolor sit amet.</p>
+          <div class="stars">
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star'></i>
+              <i class='bx bxs-star-half'></i>
+          </div>
+      </div>
+          <div class="box" style="color: white;">
+              <img src="pic-3.png" alt="">
+              <h2>ALI</h2>
+              <p> my experience with the Cario Motors has been nothing short of fantastic. It's a car that not only meets but exceeds expectations. If you're in the market for a reliable, stylish, and feature-packed vehicle, I highly recommend taking a closer look at the offerings from Cario Motors.</p>
+              <div class="stars">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star-half'></i>
+              </div>
+          </div>
+</div>
+</section>
+<!-- end of customer -->
+   <!-- logos -->
+   <div class="container-fluid align-items-centre" style="background: #0f0e0e; height: 100px; position: relative;  " >
+    <marquee behavior="" direction="">
+    <div class="row d-flex justify-content-centre"  >
+       
+          <div class="col-2"><a href="toyoa.html"><img src="./logo/ty-removebg-preview.png" alt="" style="height: 100px; width: 100px; padding: 30px;"></a></div>
+          <div class="col-2"><a href="suzuki.html"><img src="./logo/s-l400-removebg-preview.png" alt="" style="height: 100px; width: 100px; padding: 30px;"></a></div>
+          <div class="col-2"><a href="hundai.html"><img src="./logo/h-removebg-preview.png" alt="" style="height: 100px; width: 100px; padding: 30px; margin-top: 0px;"></a></div>
+          <div class="col-2"><a href="kiamotors.html"><img src="./logo/k-removebg-preview.png" alt="" style="height: 100px; width: 100px; padding:30px;  position: fixed;"></a></div>
+          <div class="col-2"><a href="bmw.html"><img src="./logo/b-removebg-preview.png" alt="" style="height: 100px; width: 100px; padding: 30px;"></a></div>
+          <div class="col-2"><a href="audi.html"><img src="./logo/a-removebg-preview.png" alt="" style="height: 100px; width: 100px; padding: 30px;"></a></div>
+           </div>
+  </marquee>
+  </div>
+  <!-- end of logo -->
+   <!-- footer -->
+   <div class="container-fluid" id="footer" style="background-color: black;">
+    <div class="row" style="margin-top: 20px;">
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="150"> <span style="color: #ff5722;" > Car Addict</span>
+        <h3 >Goes for The <span style="color: #ff5722;">best</span> </h3> <br>
+        <p>"Drive with passion, arrive in style." <br>
+          "Turning miles into memories, one journey at a time."</p>
+       
+  <i class='bx bxl-facebook' style="margin: 5px;"></i>
+  <i class='bx bxl-instagram' style="margin: 5px;"></i>
+  <i class='bx bxl-linkedin' style="margin: 5px;"></i>
+  <i class='bx bxl-twitter' style="margin: 5px;"></i>
+    </div>
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="300">
+        <h3>Quick links</h3>
+        <a href="index.html"  class="links">
+          <i class='bx bx-right-arrow-alt'></i> Home</a> <br>
+        <a href="aboutus.html"  class="links">
+          <i class='bx bx-right-arrow-alt'></i> About </a> <br>
+        <a href="sitemap.html"  class="links">
+          <i class='bx bx-right-arrow-alt'></i> Site map </a> <br>
+        <a href="discount.html"  class="links">
+          <i class='bx bx-right-arrow-alt'></i> Services </a> <br>
+        <a href="index.html#popular"  class="links">
+          <i class='bx bx-right-arrow-alt'></i> Gallery   </a> <br>
+        <a href="finance.html" class="links">
+          <i class='bx bx-right-arrow-alt'></i> Finance </a>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="450">   <h3>Contact info</h3>
+        <span  style="color: white;"><i class='bx bx-map' style="margin: 5px;"></i> Ohio, USA</span> <br>
+        <span style="color: white;" ><i class='bx bx-phone-call' style="margin: 5px;"></i> +123-456-7890</span> <br>
+        <span  style="color: white;"><i class='bx bxs-envelope'  style="margin: 5px;"></i> demo@gmail.com</span> <br>
+        <span  style="color: white;"><i class='bx bxs-alarm' style="margin: 5px;"></i> 9:00am - 5:00pm</span>
+        
+      </div>
+    </div>
+  </div>
+  <!-- end of footer -->
+
+
+
+<!-- slider -->
+<!-- Modal Window -->
+<div class="modal fade" id="registrationmodal" tabindex="-1" aria-labelledby="registrationmodallabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h5 class="modal-title" id="registrationmodallabel">Quick Contact</h5> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" >
+        <form id="contact">
+          <h3>Quick Contact</h3>
+<h4 >Contact us today, and get reply with in 24 hours!</h4>
+<fieldset >
+  <input placeholder="Your name" type="text" tabindex="1" required autofocus >
+</fieldset>
+<fieldset >
+  <input placeholder="Your Email Address" type="email" tabindex="2" required>
+</fieldset>
+<fieldset  >
+  <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+</fieldset>
+<fieldset >
+ 
+  <select name="select" id="select"  >
+    <option value="">------select brand-------</option>
+  <option value="">Toyota</option>
+  <option value="">Huandai</option>
+  <option value="">Suzuki</option>
+  <option value="">kia Motors</option>
+  <option value="">Audi</option>
+  <option value="">Bmw</option>
+</select> 
+</fieldset>
+<fieldset >
+  
+  <select name="select" id="select"  >
+    <option value="">------select models-------</option>
+  <option value="">Toyota</option>
+  <option value="">Huandai</option>
+  <option value="">Suzuki</option>
+  <option value="">kia Motors</option>
+  <option value="">Audi</option>
+  <option value="">Bmw</option>
+</select> 
+</fieldset>
+<fieldset >
+
+  <select name="select" id="select"  >
+    <option value="">------select color-------</option>
+  <option value="">black</option>
+  <option value="">white</option>
+  <option value="">silver</option>
+  <option value="">blue</option>
+  <option value="">red</option>
+  <option value="">green</option>
+</select> 
+</fieldset>
+<fieldset>
+  <textarea placeholder="Type your Message Here...." tabindex="7" required></textarea>
+</fieldset>
+<fieldset>
+  <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" style=" border-radius: 50px; font-size: 15px; font-weight: bold;  margin: 10px; text-align: center;  margin-top: 0px; ">Submit</button>
+</fieldset>
+                      </form>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  function videoUrl(link){
+    document.getElementById("slider1").src = link;
+  }
+</script>
+
+
+
+
+
+
+<script src="index.js"></script>
+<!-- download link -->
+  <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  <!-- online link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ <!-- link aos (animation on screen ) js -->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+    AOS.init({
+      duration: 800,
+      offset: 150,
+    });
+  </script>
+</body>
+</html>
+
